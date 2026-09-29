@@ -50,6 +50,7 @@ import fr.openmc.core.features.milestones.MilestonesManager;
 import fr.openmc.core.features.privatemessage.PrivateMessageManager;
 import fr.openmc.core.features.privatemessage.SocialSpyManager;
 import fr.openmc.core.features.profile.ProfileManager;
+import fr.openmc.core.features.riddle.RiddleFeature;
 import fr.openmc.core.features.quests.QuestProgressSaveManager;
 import fr.openmc.core.features.quests.QuestsManager;
 import fr.openmc.core.features.settings.PlayerSettingsManager;
@@ -137,7 +138,8 @@ public class OMCPlugin extends JavaPlugin {
             BossbarManager::new,
             ShopManager::new,
             HomeIconCacheManager::new,
-            DimensionOpenerManager::new
+            DimensionOpenerManager::new,
+            RiddleFeature::new
     ));
 
     public static final List<Feature> loadedFeature = new ArrayList<>();
